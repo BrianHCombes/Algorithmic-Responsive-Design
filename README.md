@@ -51,14 +51,13 @@ I wrote an RWD development tool called **Algorithmic Response Tool**. It's a bet
 
 ### Theory of Operation:
 This tool asks for the desired size of an Element at viewport width "A" and also at viewport width "B." It then calculates
-and creates a **sizing equation** to linearly determine what the Elements size should be. This sizing equation calculates a proportionaly sized element regardless of viewport width.
+and creates a **sizing equation** to linearly determine what the Elements size should be. This sizing equation then calculates a proportionaly sized element regardless of viewport width. The sizing equation is intended for use in Javascript HTML DOM or equivalent to manipulate CSS properties as well as non CSS components.
 
 
 Media queries not needed.
 
 
 ## General Directions for the Alorithmic Response Tool:
-
-Run **response-tool.html**
+You can download and run the files or for a quick look click this: [**response-tool.html**](http://www.tarptiedown.com/response/response-tool.html)
 
 
