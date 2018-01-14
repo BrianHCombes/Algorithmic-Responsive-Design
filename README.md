@@ -1,7 +1,9 @@
 # Responsive Web Design using algorithms
 
-### **Obtain pixel precision presentation regardless of viewport size** 
+### **Obtaining pixel precision presentation regardless of viewport size** 
 
+
+### :arrow_down_small: **Plunker**
 Run in Plunker | Citation / Note
 ----------------------------------------------------------------------------|--------------------------------------------------------
 [View in Plunker](https://plnkr.co/edit/Kycfo9gBu5gfeR5jTkyy?p=info) | For file viewing - Use a browser for responsive performance
