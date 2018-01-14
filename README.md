@@ -1,6 +1,6 @@
 # Responsive Web Design using algorithms
 
-### **Using alogorithms to manage Responsive Web Design** 
+### **Obtain pixel precision presentation regardless of viewport size** 
 
 Run in Plunker | Citation / Note
 ----------------------------------------------------------------------------|--------------------------------------------------------
