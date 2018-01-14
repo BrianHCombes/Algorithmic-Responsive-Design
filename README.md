@@ -25,7 +25,17 @@ Run in Plunker | Citation / Note
 **   Citation / Note   **    | **Research Sources**                                                
 ---------------------- | ---------------------------------------------------------------------------
 **screen resolutions** | http://mediag.com/news/popular-screen-resolutions-designing-for-all/ 
-**-**                  | https://i1.wp.com/thedigitaldisciple.net/wp-content/uploads/2016/09/Tablet-Screen-Master-2016-09-21-Alpha-Sort.jpg 
+**-**                  | https://i1.wp.com/thedigitaldisciple.net/wp-content/uploads/2016/09/Tablet-Screen-Master-2016-09-21-Alpha-Sort.jpg
+**-**  | https://www.w3schools.com/browsers/default.asp   (browser statistics for all devices) 
+**-**  | https://stackoverflow.com/questions/6666907/how-to-detect-a-mobile-device-with-javascript 
+**-**  | -
+**-**  | -
+**-**  | -
+**-**  | -
+**-**  | -
+**-**  | -
+**-**  | -
+**-**  | -
                       
 :heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:
 
