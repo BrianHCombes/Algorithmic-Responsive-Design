@@ -81,16 +81,16 @@ You can download and run the files or for a quick look click: [**response-tool.h
 **6:** For non-linear response I recommend defining your response curve then overlaying multiple linear equations to closely approximate your non-linear response curve. For example:   
 
     for(i=0; i<document.getElementsByClassName("equationPoints1").length; i++ ){
-            if(width >= 960){ 
-                document.getElementsByClassName("equationPoints1")[i].style.left = "20%";                               
-                // 20% at 1920 - 20% at 960
-            } 
-            else if(width >= 480 && width < 960){
-                document.getElementsByClassName("equationPoints1")[i].style.left = (-0.04167)*(width) + 60.00000 + "%"; 
-                // 20% at 960 - 40% at 480
-            }
-            else {
-                document.getElementsByClassName("equationPoints1")[i].style.left = (-0.16667)*(width) + 120.00000 + "%";
-                // 40% at 480 - 60% at 360
-            }
+        if(width >= 960){ 
+            document.getElementsByClassName("equationPoints1")[i].style.left = "20%";                               
+            // 20% at 1920 - 20% at 960
+        } 
+        else if(width >= 480 && width < 960){
+            document.getElementsByClassName("equationPoints1")[i].style.left = (-0.04167)*(width) + 60.00000 + "%"; 
+            // 20% at 960 - 40% at 480
+        }
+        else {
+            document.getElementsByClassName("equationPoints1")[i].style.left = (-0.16667)*(width) + 120.00000 + "%";
+            // 40% at 480 - 60% at 360
+        }
     }
