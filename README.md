@@ -49,7 +49,7 @@ No question one of my last frontiers to explore in full stack web development wa
 
 I wrote an RWD development tool called **Algorithmic Response Tool**. It's a beta verion but is useful as is.
 
-###Theory of Operation:
+### Theory of Operation:
 This tool asks for the desired size of an Element at viewport width "A" and also at viewport width "B." It then calculates
 and creates a **sizing equation** to linearly determine what the Elements size should be. This sizing equation calculates a proportionaly sized element regardless of viewport width.
 
