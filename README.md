@@ -61,8 +61,11 @@ Media queries not needed.
 You can download and run the files or for a quick look click: [**response-tool.html**](http://www.tarptiedown.com/response/response-tool.html)
 
 **Step 1:** Enter the viewport width and element size you desire on a large viewport such as a desktop or laptop.
+
 **Step 2:** Enter the viewport width and element size you desire on a small viewport such as a mobile phone.
+
 **Step 3:** Click the create equation button.
+
 **Step 4:** Now click the copy button and paste the equation into your Javascript as needed.
 
 ## Example Code
