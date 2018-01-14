@@ -43,18 +43,18 @@ Run in Plunker | Citation / Note
   
 :heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:
 
-### :arrow_down_small: **Algorithmic Responsive Design:**
+## :arrow_down_small: **Algorithmic Responsive Design**
 
 No question one of my last frontiers to explore in full stack web development was RWD. There are still many stones I have yet to turn over in RWD. But within the first couple of weeks of RWD research I realized I could use linear equations to manage responsiveness.
 
 I wrote an RWD development tool called **Algorithmic Response Tool**. It's a beta verion but is useful as is.
 
-### Theory of Operation:
+## Theory of Operation
 This tool asks for the desired size of an Element at viewport width "A" and also at viewport width "B." It then calculates
 and creates a **sizing equation** to linearly determine what the element's size should be. This sizing equation then calculates a proportionaly sized element regardless of viewport width. The sizing equation is intended for use in Javascript HTML DOM or equivalent to manipulate CSS properties as well as non CSS components.
 
 
-## Using the Algorithmic Response Tool:
+## Using the Algorithmic Response Tool
 You can download and run the files or for a quick look click: [**response-tool.html**](http://www.tarptiedown.com/response/response-tool.html)
 
 **Step 1:** Enter the viewport width and element size you desire on a large viewport such as a desktop or laptop.   
@@ -67,8 +67,8 @@ You can download and run the files or for a quick look click: [**response-tool.h
     // 3em at 1920 - 1.3em at 360
     // width is viewport width
     
-## Features:
-**1:** Equation Maker
-**2:** Size finder at given viewport width
-**3:** Reported device widths using various window properties 
-**4:** Reported Device orientation using event listener.
+## Features
+**1:** Equation Maker   
+**2:** Size finder at given viewport width   
+**3:** Reported device widths using various window properties    
+**4:** Reported Device orientation using event listener.   
