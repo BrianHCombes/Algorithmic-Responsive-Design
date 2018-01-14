@@ -78,7 +78,8 @@ You can download and run the files or for a quick look click: [**response-tool.h
 **3:** This app is responsive so try it out on your various devices.   
 **4:** Technically, you are not limited to relative sizing with ***em*** or ***%*** etc. You can use ***px*** as well.   
 **5:** You are not limited to the constraints of bootstrap.css.   
-**6:** For non-linear response I recommend defining your response curve then overlaying multiple linear equations to closely approximate your non-linear response curve. For example:
+**6:** For non-linear response I recommend defining your response curve then overlaying multiple linear equations to closely approximate your non-linear response curve. For example:   
+
     for(i=0; i<document.getElementsByClassName("equationPoints1").length; i++ ){
             if(width >= 960){ 
                 document.getElementsByClassName("equationPoints1")[i].style.left = "20%";                               
