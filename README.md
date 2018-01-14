@@ -1,8 +1,6 @@
-# Research-Responsive-Design
+# Responsive Web Design using algorithms
 
-
-### **_Responsive-Design_**
-#**Using alogorithms to handle responsiveness** 
+### **Using alogorithms to manage Responsive Web Design** 
 
 Run in Plunker | Citation / Note
 ----------------------------------------------------------------------------|--------------------------------------------------------
@@ -22,7 +20,7 @@ Run in Plunker | Citation / Note
 :heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:
 
 ### :arrow_down_small: **Tutorial Links**
-**Citation / Note**    | **Research Sources**                                                
+**   Citation / Note   **    | **Research Sources**                                                
 ---------------------- | ---------------------------------------------------------------------------
 **screen resolutions** | http://mediag.com/news/popular-screen-resolutions-designing-for-all/ 
 **-**                  | https://i1.wp.com/thedigitaldisciple.net/wp-content/uploads/2016/09/Tablet-Screen-Master-2016-09-21-Alpha-Sort.jpg 
