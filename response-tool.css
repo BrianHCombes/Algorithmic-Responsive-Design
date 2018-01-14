@@ -1,0 +1,66 @@
+@media (min-width:1170px)
+{
+    #sizedDiv
+    {
+        width:1170px;       /* Limits maximum page content width to 1170px */
+    } 
+}
+
+#sizedDiv
+{
+background-color:#b6e1fc;    
+}
+            
+button:hover
+{
+cursor:pointer;    
+background-color:lightseagreen;
+color:white;
+}
+
+
+#equationBox1
+{
+background-color:yellow;
+border:1px solid black;
+padding:5px 0px 5px 10px;
+width:80%;
+}
+
+.equationPoints1, .elementSizeEq
+{
+position:absolute; 
+padding:5px 0px 5px 5px;
+}
+
+#slopeInput, #yInterceptInput, #viewportWidthInput
+{
+position:absolute; 
+left:20%;    
+}
+
+.headerStyle1
+{
+font-size:5em;    
+}
+
+td, th
+{
+border:1px solid black; 
+padding:2px 5px;    
+}
+
+a
+{
+text-decoration:none;    
+}
+
+#title
+{
+margin-left:auto;
+margin-right:auto;
+width:90%;
+background-color:#EEEEEE;
+border-radius:5px;
+font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}

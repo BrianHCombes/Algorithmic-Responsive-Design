@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Algorithmic Response Tool for responsive web page development created on 01/09/2018">
+    <meta name="keywords" content="response, responsive, mobile, device">
+    <meta name="author" content="Brian H.Combes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algorithmic Response Tool</title>
+    <link rel="SHORTCUT ICON" href="http://www.tarptiedown.com/ttd-website/ttd-website-pics-videos/instruction-images/teacherIcon.png">
+    <link rel="stylesheet" type="text/css" href="response-tool.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.6.0/clipboard.min.js"></script>
+    <!-- script files also listed at end of this file for proper operation -->
+
+<style></style>    
+    
+</head>
+<body>
+
+<!--************************************************************************************************************************************************-->
+<!-- Equation maker section -->
+    <div id="sizedDiv" style="position:relative; margin:auto;"><br>
+        <div id="title" style="text-align:center; margin-bottom:10px; ">ALGORITHMIC RESPONSE TOOL</div>
+        <div class="headerStyle1" style="text-align:center; color:blue;">Element Sizing Equation</div>
+        <div class="headerStyle2" style="text-align:center; font-weight:bold;">
+            <div style="color:red;">Slope Intercept Equation Maker</div>
+            <div style="color:blue; margin:0px 10px;">Calculates proportional element, text, or property sizing to Viewport width</div>
+        </div>    
+        <br><br>
+        <div id="equationPointsEntry">
+            &nbsp;&nbsp;Enter first viewport width:
+            <input class="equationPoints1" id="equationPoint1" type="number" value="1920">
+            <br><br>
+            &nbsp;&nbsp;Enter first property size:
+            <input class="equationPoints1" id="equationPoint2" type="number" value="5">
+            <br><br>
+            &nbsp;&nbsp;Enter second viewport width:
+            <input class="equationPoints1" id="equationPoint3" type="number" value="360">
+            <br><br>
+            &nbsp;&nbsp;Enter second property size:
+            <input class="equationPoints1" id="equationPoint4" type="number" value="1">
+        </div>    
+        <br><br>
+        
+        <div style="text-align:center; margin-bottom:10px;">
+            <button id="createEquationBtn" onclick="calc()" style="width:50%;">Create Equation</button>
+        </div>
+        
+        <div id="equationBox1" style="color:red; font-weight:bold; float:left; margin-left:10px;"> 
+            <span>Element/Property size = </span><span id="lineBreak1" style="display:none;"><br></span>
+            <span id="eqExpression"></span>
+        </div>
+         
+        
+        <button id="copyEqBtn" 
+                data-clipboard-action="copy"
+                data-clipboard-target="#eqExpression"
+                style="float:left; margin-left:10px;"> 
+                <img src="https://clipboardjs.com/assets/images/clippy.svg" style="width:30px;" alt="Copy to clipboard">
+        </button><p style="clear:left;">&nbsp;</p>
+        <hr>
+        
+<!--************************************************************************************************************************************************-->
+<!-- Element size calculator at given viewport width - section -->
+        <div class="headerStyle1" style="text-align:center; color:blue;">Element Size at Viewport</div>
+        <div class="headerStyle2" style="color:blue; font-weight:bold; clear:left; text-align:center;">Element size calculator at given Viewport width</div>
+        <br>
+        <div id="inputDiv2">
+            &nbsp;&nbsp;Enter slope of equation
+            <input class="elementSizeEq" id="slopeInput" type="number" value="">
+            <br><br>
+
+            &nbsp;&nbsp;Enter y intercept of equation
+            <input class="elementSizeEq" id="yInterceptInput" type="number" value="">
+            <br><br>
+
+            &nbsp;&nbsp;Enter Viewport width in pixels
+            <input class="elementSizeEq" id="viewportWidthInput" type="number" value="">
+        </div>
+        <br>
+        
+        &nbsp;&nbsp;<button id="elementSizeBtn" onclick="getSize()" style="">Get Size</button>
+        <span id="showSize" style="margin-left:25px; font-size:24px; font-weight:bold;"></span>
+        <br><br><hr>
+    
+<!--************************************************************************************************************************************************-->        
+<!-- Table of width and length dimensions reported by various window properties and methods - section -->
+        <div class="headerStyle1" style="text-align:center; color:blue;">Device Width and Height</div>
+        <div class="headerStyle2" style="color:blue; font-weight:bold; text-align:center;">Width and height properties reported by this device</div><br>
+        
+        <table id="tableSize" style="border-collapse:collapse; border:1px solid black; width:99%; margin:0% 0.5%;">
+            <tr>
+                <th style="width:22%">Property / Method</th>
+                <th style="width:10%">Value (px)</th>
+                <th style="width:68%">About</th>
+            </tr>
+            <tr>
+                <td style="">window.outerWidth
+                    <a href="https://www.w3schools.com/jsref/prop_win_outerheight.asp" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a><br>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/outerWidth" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a>
+                </td> 
+                <td class="dimenTable" style=""></td>
+                <td style="color:red;">Viewport size.</td> 
+            </tr>
+            <tr>
+                <td style="">window.outerHeight
+                    <a href="https://www.w3schools.com/jsref/prop_win_outerheight.asp" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a><br>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/outerHeight" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a>
+                </td> 
+                <td class="dimenTable" style=""></td>
+                <td style="color:red;">Viewport size.</td> 
+            </tr>
+            <tr>
+                <td style="">window.innerWidth
+                    <a href="https://www.w3schools.com/jsref/prop_win_innerheight.asp" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a><br>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/innerWidth" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a>
+                </td> 
+                <td class="dimenTable" style=""></td>
+                <td style="color:red;"><span style="color:blue;">Viewport size, changes with zoom.</span></td> 
+            </tr>
+            <tr>
+                <td style="">window.innerHeight
+                    <a href="https://www.w3schools.com/jsref/prop_win_innerheight.asp" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a><br>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/innerHeight" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a>
+                </td> 
+                <td class="dimenTable" style=""></td>
+                <td style="color:red;"><span style="color:blue;">Viewport size, changes with zoom.</span></td> 
+            </tr>
+            <tr>
+                <td style="">window.screen.width
+                    <a href="https://www.w3schools.com/jsref/prop_screen_width.asp" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a><br> 
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Screen/width" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a>
+                </td> 
+                <td class="dimenTable" style=""></td>
+                <td style="color:red;"><span style="color:green;">Total screen width.</span></td> 
+            </tr>
+            <tr>
+                <td style="">window.screen.height
+                    <a href=" https://www.w3schools.com/jsref/prop_screen_height.asp" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a><br> 
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Screen/height" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a>
+                </td> 
+                <td class="dimenTable" style=""></td>
+                <td style="color:red;"><span style="color:green;">Total screen width.</span></td> 
+            </tr>
+            <tr>
+                <td style="">window.screen.availWidth 
+                    <a href="https://www.w3schools.com/jsref/prop_screen_availwidth.asp" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a><br> 
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Screen/availWidth" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a>
+                </td> 
+                <td class="dimenTable" style=""></td>
+                <td style="color:red;"><span style="color:purple;">Available width for browser content.</span></td> 
+            </tr>
+            <tr>
+                <td style="">window.screen.availHeight
+                    <a href="https://www.w3schools.com/jsref/prop_screen_availheight.asp" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a><br>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Screen/availHeight" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a>
+                </td> 
+                <td class="dimenTable" style=""></td>
+                <td style="color:red;"><span style="color:purple;">Available width for browser content.</span></td> 
+            </tr>
+            <tr>
+                <td style="">$(window).outerWidth() 
+                    <a href="https://www.w3schools.com/jquery/html_outerwidth.asp" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a><br>
+                    <a href="http://api.jquery.com/outerWidth" target="_blank" style="float:right;"><span style="font-size:0.8em">&#128279;</span>(API)</a>
+                </td> 
+                <td class="dimenTable" style=""></td>
+                <td style="color:red;"><span style="color:fuchsia;">jQuery method for outer width of an element.</span></td> 
+            </tr>
+            <tr>
+                <td style="">$(window).outerHeight() 
+                    <a href="https://www.w3schools.com/jquery/html_outerheight.asp" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a><br>
+                    <a href="http://api.jquery.com/outerHeight/" target="_blank" style="float:right;"><span style="font-size:0.8em">&#128279;</span>(API)</a>
+                </td> 
+                <td class="dimenTable" style=""></td>
+                <td style="color:red;"><span style="color:fuchsia;">jQuery method for outer height of an element.</span></td> 
+            </tr>
+            <tr>
+                <td style="">$(window).innerWidth()  
+                    <a href="https://www.w3schools.com/jquery/html_innerwidth.asp" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a><br>
+                    <a href="http://api.jquery.com/innerWidth/" target="_blank" style="float:right;"><span style="font-size:0.8em">&#128279;</span>(API)</a>
+                </td>  
+                <td class="dimenTable" style=""></td>
+                <td style="color:red;"><span style="color:fuchsia;">jQuery method for inner width of an element.</span></td> 
+            </tr>
+            <tr>
+                <td style="">$(window).innerHeight() 
+                    <a href="https://www.w3schools.com/jquery/html_innerheight.asp" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a><br>
+                    <a href="http://api.jquery.com/innerheight/" target="_blank" style="float:right;"><span style="font-size:0.8em">&#128279;</span>(API)</a>
+                </td>  
+                <td class="dimenTable" style=""></td>
+                <td style="color:red;"><span style="color:fuchsia;">jQuery method for inner height of an element.</span></td> 
+            </tr>
+            <tr>
+                <td style="">$(window).width()   
+                    <a href="https://www.w3schools.com/jquery/css_width.asp" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a><br>
+                    <a href="http://api.jquery.com/width/" target="_blank" style="float:right;"><span style="font-size:0.8em">&#128279;</span>(API)</a>
+                </td>  
+                <td class="dimenTable" style=""></td>
+                <td style="color:red;"><span style="color:fuchsia;">jQuery method for width of an element.</span></td> 
+            </tr>
+             <tr>
+                <td style="">$(window).height()  
+                    <a href="https://www.w3schools.com/jquery/css_height.asp" target="_blank" style="float:right;">&nbsp;<span style="font-size:0.8em">&#128279;</span>(API)</a><br>
+                    <a href="http://api.jquery.com/height/" target="_blank" style="float:right;"><span style="font-size:0.8em">&#128279;</span>(API)</a>
+                </td>  
+                <td class="dimenTable" style=""></td>
+                <td style="color:red;"><span style="color:fuchsia;">jQuery method for height of an element.</span></td> 
+            </tr>
+        </table>
+        <br><br><hr>
+<!--************************************************************************************************************************************************-->
+<!-- Report orientation section -->
+
+        <div class="headerStyle1" style="text-align:center; color:blue;">Device Orientation</div>
+        <div class="headerStyle2" style="color:blue; font-weight:bold; text-align:center;">Orientation reported by this device using an event listener</div>
+        <div id="deviceOrientation"></div>
+        <div id="orientationAPI" style="text-align:center">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Testing_media_queries" target="_blank">&#128279;API</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia" target="_blank">&#128279;API</a>
+            <a href="https://www.w3schools.com/jsref/met_win_matchmedia.asp" target="_blank">&#128279;API</a>
+        </div>
+    </div>
+<script src="response-tool.js"></script>
+</body>
+</html>
