@@ -84,7 +84,7 @@ You can download and run the files or for a quick look click: [**response-tool.h
     for(i=0; i<document.getElementsByClassName("equationPoints1").length; i++ ){
         if(width >= 960){ 
             document.getElementsByClassName("equationPoints1")[i].style.left = "20%";                               
-            // 20% at 1920 - 20% at 960
+            // 20% at 960 and up
         } 
         else if(width >= 480 && width < 960){
             document.getElementsByClassName("equationPoints1")[i].style.left = (-0.04167)*(width) + 60.00000 + "%"; 
