@@ -93,6 +93,4 @@ You can download and run the files or for a quick look click: [**response-tool.h
                 document.getElementsByClassName("equationPoints1")[i].style.left = (-0.16667)*(width) + 120.00000 + "%";
                 // 40% at 480 - 60% at 360
             }
-            document.getElementsByClassName("equationPoints1")[i].style.width = (0.03205)*(width) + 38.46154 + "px";    
-            // 100px at 1920 - 50px at 360
-        }
+    }
