@@ -7,7 +7,7 @@
 Run in Plunker | Citation / Note
 ----------------------------------------------------------------------------|--------------------------------------------------------
 [View in Plunker](https://plnkr.co/edit/Kycfo9gBu5gfeR5jTkyy?p=info) | For file viewing - Use a browser for responsive performance
-[View in Browser](http://www.tarptiedown.com/response/response-tool.html) | For demonstrating responsive performace
+[View in Browser](http://www.tarptiedown.com/response/response-tool.html) | For demonstrating responsive performance
 
 :heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:
 
@@ -71,3 +71,7 @@ You can download and run the files or for a quick look click: [**response-tool.h
 **2:** Size finder at given viewport width   
 **3:** Reported device widths using various window properties    
 **4:** Reported Device orientation using event listener.   
+
+## Comments Tips and Pointers
+**1:** As of this juncture - I use **`window.screen.availWidth`** to determine the device's viewport width.
+**2:** You can just as easily do height sizing
