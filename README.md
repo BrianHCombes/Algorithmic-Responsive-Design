@@ -54,9 +54,6 @@ This tool asks for the desired size of an Element at viewport width "A" and also
 and creates a **sizing equation** to linearly determine what the element's size should be. This sizing equation then calculates a proportionaly sized element regardless of viewport width. The sizing equation is intended for use in Javascript HTML DOM or equivalent to manipulate CSS properties as well as non CSS components.
 
 
-Media queries not needed.
-
-
 ## Using the Algorithmic Response Tool:
 You can download and run the files or for a quick look click: [**response-tool.html**](http://www.tarptiedown.com/response/response-tool.html)
 
@@ -66,5 +63,12 @@ You can download and run the files or for a quick look click: [**response-tool.h
 **Step 4:** Now click the copy button and paste the equation into your Javascript as needed.
 
 ## Example Code
-    document.getElementById("title").style.fontSize = (0.00109)*(width) + 0.90769 + "em";      // 3em at 1920 - 1.3em at 360
-
+    document.getElementById("title").style.fontSize = (0.00109)*(width) + 0.90769 + "em";      
+    // 3em at 1920 - 1.3em at 360
+    // width is viewport width
+    
+## Features:
+**1:** Equation Maker
+**2:** Size finder at given viewport width
+**3:** Reported device widths using various window properties 
+**4:** Reported Device orientation using event listener.
