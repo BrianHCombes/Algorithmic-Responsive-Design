@@ -51,13 +51,20 @@ I wrote an RWD development tool called **Algorithmic Response Tool**. It's a bet
 
 ### Theory of Operation:
 This tool asks for the desired size of an Element at viewport width "A" and also at viewport width "B." It then calculates
-and creates a **sizing equation** to linearly determine what the Elements size should be. This sizing equation then calculates a proportionaly sized element regardless of viewport width. The sizing equation is intended for use in Javascript HTML DOM or equivalent to manipulate CSS properties as well as non CSS components.
+and creates a **sizing equation** to linearly determine what the element's size should be. This sizing equation then calculates a proportionaly sized element regardless of viewport width. The sizing equation is intended for use in Javascript HTML DOM or equivalent to manipulate CSS properties as well as non CSS components.
 
 
 Media queries not needed.
 
 
-## General Directions for the Alorithmic Response Tool:
-You can download and run the files or for a quick look click this: [**response-tool.html**](http://www.tarptiedown.com/response/response-tool.html)
+## Using the Algorithmic Response Tool:
+You can download and run the files or for a quick look click: [**response-tool.html**](http://www.tarptiedown.com/response/response-tool.html)
 
+**Step 1:** Enter the viewport width and element size you desire on a large viewport such as a desktop or laptop.
+**Step 2:** Enter the viewport width and element size you desire on a small viewport such as a mobile phone.
+**Step 3:** Click the create equation button.
+**Step 4:** Now click the copy button and paste the equation into your Javascript as needed.
+
+## Example Code
+    document.getElementById("title").style.fontSize = (0.00109)*(width) + 0.90769 + "em";      // 3em at 1920 - 1.3em at 360
 
