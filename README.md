@@ -47,7 +47,7 @@ Run in Plunker | Citation / Note
 
 No question one of my last frontiers to explore in full stack web development was RWD. There are still many stones I have yet to turn over in RWD. But within the first couple of weeks of RWD research I realized I could use linear equations to manage responsiveness.
 
-I wrote an RWD development tool called **Algorithmic Response Tool**. It's a beta verion but is useful as is.
+I wrote an RWD development tool called **Algorithmic Response Tool**. It's a beta version but is useful as is.
 
 ## Theory of Operation
 This tool asks for the desired element size for the 1st viewport width and the desired element size for the 2nd viewport width. It then calculates and creates a **sizing equation** to linearly determine what the element's size should be at any given viewport width. The sizing equation is intended for use in Javascript HTML DOM or equivalent to manipulate CSS properties as well as non CSS affected components. The equation has a simple slope-intercept format: For example: **(0.00256) x (width) + 0.07692** defines an element size
