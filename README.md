@@ -95,3 +95,4 @@ You can download and run the files or for a quick look click: [**response-tool.h
             // 40% at 480 - 60% at 360
         }
     }
+**7:** Review the code blocks in the Javascript file for more details. All is written in simple Javascript HTML DOM for clarity.
