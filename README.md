@@ -1,6 +1,6 @@
 # Responsive Web Design using algorithms
 
-### **Obtaining pixel precision presentation regardless of viewport size** 
+### **Obtain pixel precision presentation regardless of viewport size** 
 
 
 ### :arrow_down_small: **Plunker**
@@ -50,7 +50,8 @@ No question one of my last frontiers to explore in full stack web development wa
 I wrote an RWD development tool called **Algorithmic Response Tool**. It's a beta verion but is useful as is.
 
 ## Theory of Operation
-This tool asks for the desired size of an Element for the 1st viewport width and the desired element size for the 2nd viewport width. It then calculates and creates a **sizing equation** to linearly determine what the element's size should be at any given viewport width. The sizing equation is intended for use in Javascript HTML DOM or equivalent to manipulate CSS properties as well as non CSS affected components.
+This tool asks for the desired element size for the 1st viewport width and the desired element size for the 2nd viewport width. It then calculates and creates a **sizing equation** to linearly determine what the element's size should be at any given viewport width. The sizing equation is intended for use in Javascript HTML DOM or equivalent to manipulate CSS properties as well as non CSS affected components. The equation has a simple slope-intercept format: For example: **(0.00256) x (width) + 0.07692** defines an element size
+of **5** at a viewport width of **1920px** and a size of **1** at a viewport width of **360px**
 
 
 ## Using the Algorithmic Response Tool
