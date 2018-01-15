@@ -30,17 +30,11 @@ Run in Plunker | Citation / Note
 **device detection**   | https://stackoverflow.com/questions/6666907/how-to-detect-a-mobile-device-with-javascript 
 **device detection**   | http://www.hand-interactive.com/resources/detect-mobile-javascript.htm
 **user agent**         | https://developer.mozilla.org/en-US/search?q=navigator.userAgent
-**-**  | https://developer.mozilla.org/en-US/Apps/Progressive/Responsive/responsive_design_building_blocks
-**-**  | https://developer.mozilla.org/en-US/docs/Web/CSS/font-size
-**-**  | https://www.w3schools.com/cssref/css_units.asp
-**-**  | https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode
-**-**  | -
-**-**  | -
-  
+**responsive guide**   | https://developer.mozilla.org/en-US/Apps/Progressive/Responsive/responsive_design_building_blocks
+**reponsive guide**    | https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode
+**font sizing**        | https://developer.mozilla.org/en-US/docs/Web/CSS/font-size
+**CSS units**          | https://www.w3schools.com/cssref/css_units.asp
 
-  
-  
-  
 :heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:
 
 ## :arrow_down_small: **Algorithmic Responsive Design Tool**
