@@ -21,7 +21,7 @@ Run in Plunker | Citation / Note
 
 :heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:
 
-### :arrow_down_small: **Tutorial Links**
+### :arrow_down_small: **Research Links**
 **Citation/Note/Description**    | **Research Sources**                                                
 ---------------------- | ---------------------------------------------------------------------------
 **screen resolutions** | http://mediag.com/news/popular-screen-resolutions-designing-for-all/ 
