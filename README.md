@@ -1,6 +1,6 @@
 # Responsive Web Design using algorithms
 
-### **Obtain pixel precision presentation regardless of viewport size** 
+### **Obtain pixel perfect presentation regardless of viewport size** 
 
 
 ### :arrow_down_small: **Plunker**
