@@ -92,4 +92,4 @@ You can download and run the files or for a quick look click: [**response-tool.h
         }
     }
 **7:** Review the code blocks in the Javascript file for more details. All is written in simple Javascript HTML DOM for clarity.   
-**8:** If using Google Chrome right click anywhere on browser page, then click **inspect** to open developer tools, then click on **toggle device toolbar** *(on top menu bar)*, then use features to emulate various device widths and sizes to hone responsiveness. Other browsers also support developer tools
+**8:** If using Google Chrome right click anywhere on browser page, then click **inspect** to open developer tools, then click on **toggle device toolbar** *(on top menu bar)*, then use features to emulate various device widths and sizes to hone responsiveness. Other browsers also support developer tools.
