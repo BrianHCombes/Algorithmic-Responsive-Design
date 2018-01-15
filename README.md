@@ -6,7 +6,7 @@
 ### :arrow_down_small: **Plunker**
 Run in Plunker | Citation / Note
 ----------------------------------------------------------------------------|--------------------------------------------------------
-[View in Plunker*](https://plnkr.co/edit/Kycfo9gBu5gfeR5jTkyy?p=info) | * For file viewing only - Use a browser for proper responsive performance
+[View in Plunker*](https://plnkr.co/edit/Kycfo9gBu5gfeR5jTkyy?p=info) | * **For file viewing only** - Use a browser for proper responsive performance
 [View in Browser](http://www.tarptiedown.com/response/response-tool.html) | For demonstrating responsive performance
 
 :heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:
