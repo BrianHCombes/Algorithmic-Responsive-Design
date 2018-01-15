@@ -50,7 +50,7 @@ No question one of my last frontiers to explore in full stack web development wa
 I wrote an RWD development tool called **Algorithmic Response Tool**. It's a beta version but is useful as is.
 
 ## Theory of Operation
-This tool asks for the desired element size for the 1st viewport width and the desired element size for the 2nd viewport width. It then calculates and creates a **sizing equation** to linearly determine what the element's size should be at any given viewport width. The sizing equation is intended for use in Javascript HTML DOM or equivalent to manipulate CSS properties as well as non CSS affected components. The equation has a simple slope-intercept format: For example: **(0.00256) x (width) + 0.07692** defines an element size
+This tool asks for the desired element size for the 1st viewport width and the desired element size for the 2nd viewport width. It then calculates and creates a **sizing equation** to proportionally determine what the element's size should be at any given viewport width based on your input criteria. The sizing equation is intended for use in Javascript HTML DOM or equivalent to manipulate CSS properties as well as non CSS affected components. The equation has a simple slope-intercept format: For example: **(0.00256) x (width) + 0.07692** defines an element size
 of **5** at a viewport width of **1920px** and a size of **1** at a viewport width of **360px**
 
 
