@@ -28,12 +28,12 @@ Run in Plunker | Citation / Note
 **screen resolutions** | https://i1.wp.com/thedigitaldisciple.net/wp-content/uploads/2016/09/Tablet-Screen-Master-2016-09-21-Alpha-Sort.jpg
 **browser stats**      | https://www.w3schools.com/browsers/default.asp   (browser statistics for all devices) 
 **device detection**   | https://stackoverflow.com/questions/6666907/how-to-detect-a-mobile-device-with-javascript 
-**-**  | http://www.hand-interactive.com/resources/detect-mobile-javascript.htm
-**-**  | https://developer.mozilla.org/en-US/search?q=navigator.userAgent
+**device detection**   | http://www.hand-interactive.com/resources/detect-mobile-javascript.htm
+**user agent**         | https://developer.mozilla.org/en-US/search?q=navigator.userAgent
 **-**  | https://developer.mozilla.org/en-US/Apps/Progressive/Responsive/responsive_design_building_blocks
 **-**  | https://developer.mozilla.org/en-US/docs/Web/CSS/font-size
 **-**  | https://www.w3schools.com/cssref/css_units.asp
-**-**  | -
+**-**  | https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode
 **-**  | -
 **-**  | -
   
@@ -98,4 +98,4 @@ You can download and run the files or for a quick look click: [**response-tool.h
         }
     }
 **7:** Review the code blocks in the Javascript file for more details. All is written in simple Javascript HTML DOM for clarity.   
-**8:** If using Google Chrome right click anywhere on browser page, then click **inspect** to open developer tools, then click on **toggle device toolbar** *(on top menu bar)* click, then use features to emulate various device widths and sizes to hone responsiveness.
+**8:** If using Google Chrome right click anywhere on browser page, then click **inspect** to open developer tools, then click on **toggle device toolbar** *(on top menu bar)*, then use features to emulate various device widths and sizes to hone responsiveness. Other browsers also support developer tools
