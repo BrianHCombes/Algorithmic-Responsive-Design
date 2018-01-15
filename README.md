@@ -69,12 +69,12 @@ You can download and run the files or for a quick look click: [**response-tool.h
 **3:** Reported device widths using various window properties    
 **4:** Reported Device orientation using event listener.   
 
-## Comments Tips and Pointers
+## Comments, Tips and Pointers
 **1:** As of this juncture - I use **`window.screen.availWidth`** to determine the device's viewport width.   
 **2:** You can just as easily do height sizing.   
 **3:** This app is responsive so try it out on your various devices.   
 **4:** Technically, you are not limited to relative sizing with ***em*** or ***%*** etc. You can use ***px*** as well.   
-**5:** You are not limited to the grid constraints of bootstrap.css.   
+**5:** You are not limited to grid constraints.   
 **6:** For non-linear response I recommend defining your response curve then overlaying multiple linear equations to closely approximate your non-linear response curve. For example:   
 
     for(i=0; i<document.getElementsByClassName("equationPoints1").length; i++ ){
