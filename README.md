@@ -53,6 +53,8 @@ of **5** at a viewport width of **1920px** and a size of **1** at a viewport wid
 ## Using the Algorithmic Response Tool
 You can download and run the files or for a quick look click: [**response-tool.html**](http://www.tarptiedown.com/response/response-tool.html)
 
+**Prep:** First decide how you want an element to look or behave in a large viewport. Then decide how you want the same element to look or behave in a small viewport. These are the two points needed to create the sizing equation.
+
 **Step 1:** Enter the viewport width and element size you desire on a large viewport such as a desktop or laptop.   
 **Step 2:** Enter the viewport width and element size you desire on a small viewport such as a mobile phone.    
 **Step 3:** Click the create equation button.    
