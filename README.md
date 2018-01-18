@@ -70,7 +70,7 @@ You can download and run the files or for a quick look click: [**response-tool.h
     // width is viewport width
     
     
-## Features
+## App Features
 **1:** Equation Maker   
 **2:** Size finder at given viewport width   
 **3:** Reported device widths using various window properties    
