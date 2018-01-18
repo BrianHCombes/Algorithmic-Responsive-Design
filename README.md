@@ -65,6 +65,11 @@ You can download and run the files or for a quick look click: [**response-tool.h
     // 3em at 1920 - 1.3em at 360
     // width is viewport width
     
+    document.getElementById("title").style.fontSize = (-0.01923)*(width) + 56.92308 + "vw";  
+    // 20vw at 1920 - 50vw at 360
+    // width is viewport width
+    
+    
 ## Features
 **1:** Equation Maker   
 **2:** Size finder at given viewport width   
