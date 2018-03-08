@@ -61,6 +61,8 @@ You can download and run the files or for a quick look click: [**response-tool.h
 **Step 4:** Now click the copy button and paste the equation into your Javascript as needed.
 
 ## Example Code
+**Note:** The code is written in Javascript HTML DOM.
+
     document.getElementById("title").style.fontSize = (0.00109)*(width) + 0.90769 + "em";      
     // 3em at 1920 - 1.3em at 360
     // width is viewport width
