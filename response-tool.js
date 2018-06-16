@@ -48,7 +48,13 @@
 // Responsive Styling for Equation Maker Section  
 
     function styleEquationSection(){
+        
+        document.getElementById("chooseUnitPhrase").style.padding = "5px " + (0.03529)*(vpWidth)-11.29412 + "px";
         document.getElementById("chooseUnitPhrase").style.fontSize = (0.00062)*(vpWidth)+0.77778 + "em";         // XXem at 1920 - XXem at 360
+        document.getElementsByClassName("unit")[0].style.fontSize = (0.00053)*(vpWidth)+0.63059 + "em";
+        document.getElementsByClassName("unit")[1].style.fontSize = (0.00053)*(vpWidth)+0.63059 + "em";
+        document.getElementsByClassName("unit")[2].style.fontSize = (0.00053)*(vpWidth)+0.63059 + "em";
+        // document.getElementsByClassName("unit")[0].style.color = "red";
         document.getElementById("title").style.fontSize = (0.00123)*(vpWidth)+0.55556 + "em";         // XXem at 1920 - XXem at 360
         document.getElementById("title").style.fontSize = (0.00109)*(vpWidth) + 0.90769 + "em";         // XXem at 1920 - XXem at 360
         document.getElementsByClassName("headerStyle1")[0].style.fontSize = (0.00064)*(vpWidth) + 1.26923 + "em";         // 2.5em at 1920 - 1.5em at 360
