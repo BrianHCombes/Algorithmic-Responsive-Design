@@ -6,11 +6,17 @@
     
     //var width = window.innerWidth;
     var width = window.screen.availWidth;
+    var unitTypeForEquation;
     
 //***********************************************************************************************************************************************************    
 // Derive Slope Intercept Equation
 
     function calc(){
+        for(i=0; i<3; i++){
+                if(document.getElementsByName("unit")[i].checked === true){
+                    unitTypeForEquation = document.getElementsByName("unit")[i].value;
+                }
+            }
         var viewport1 = Number(document.getElementById("equationPoint1").value);
         var property1 = Number(document.getElementById("equationPoint2").value);
         var viewport2 = Number(document.getElementById("equationPoint3").value);
@@ -18,7 +24,10 @@
         var slope = (property1 - property2)/(viewport1 - viewport2);
         var yIntercept = property1 - slope*viewport1;
         
-        document.getElementById("eqExpression").innerHTML = "(" + slope.toFixed(5) + ")*(width) + " + yIntercept.toFixed(5); 
+        if(yIntercept.toFixed(5) >= 0) // To add or not to add the "+" sign
+            document.getElementById("eqExpression").innerHTML = "(" + slope.toFixed(5) + ")*(" + unitTypeForEquation + ")+" + yIntercept.toFixed(5); 
+        else
+            document.getElementById("eqExpression").innerHTML = "(" + slope.toFixed(5) + ")*(" + unitTypeForEquation + ")" + yIntercept.toFixed(5); 
         document.getElementById("slopeInput").value = slope.toFixed(5);
         document.getElementById("yInterceptInput").value = yIntercept.toFixed(5);
         document.getElementById("viewportWidthInput").value = viewport1.toFixed(0);
@@ -43,8 +52,8 @@
         document.getElementsByClassName("headerStyle1")[0].style.fontSize = (0.00064)*(width) + 1.26923 + "em";         // 2.5em at 1920 - 1.5em at 360
         document.getElementsByClassName("headerStyle2")[0].style.fontSize = (0.00042)*(width) + 0.70000 + "em";         // 1.5em at 1920 - 0.9em at360
         document.getElementById("equationPointsEntry").style.fontSize = (0.00013)*(width) + 0.75385 + "em";             // 1.0em at 1920 - 0.8em at 360
-        document.getElementById("equationPoint1").style.left = (-0.02564)*(width) + 69.23077 + "%";                     // 20% at 1920 - 60% at 360
-        document.getElementById("equationPoint1").style.width = (0.03205)*(width) + 38.46154 + "px";                    // 100px at 1920 - 50px at 360     
+        document.getElementById("equationPoint2").style.left = (-0.02564)*(width) + 69.23077 + "%";                     // 20% at 1920 - 60% at 360
+        document.getElementById("equationPoint2").style.width = (0.03205)*(width) + 38.46154 + "px";                    // 100px at 1920 - 50px at 360     
 
         for(i=0; i<document.getElementsByClassName("equationPoints1").length; i++ ){
             if(width >= 960){ 
