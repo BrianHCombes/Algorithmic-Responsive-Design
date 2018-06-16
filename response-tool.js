@@ -25,9 +25,9 @@
         var yIntercept = property1 - slope*viewport1;
         
         if(yIntercept.toFixed(5) >= 0) // To add or not to add the "+" sign
-            document.getElementById("eqExpression").innerHTML = "(" + slope.toFixed(5) + ")*(" + unitTypeForEquation + ")+" + yIntercept.toFixed(5); 
+            document.getElementById("eqExpression").innerHTML = "((" + slope.toFixed(5) + ")*(" + unitTypeForEquation + ")+" + yIntercept.toFixed(5) + ")"; 
         else
-            document.getElementById("eqExpression").innerHTML = "(" + slope.toFixed(5) + ")*(" + unitTypeForEquation + ")" + yIntercept.toFixed(5); 
+            document.getElementById("eqExpression").innerHTML = "((" + slope.toFixed(5) + ")*(" + unitTypeForEquation + ")" + yIntercept.toFixed(5) + ")"; 
         document.getElementById("slopeInput").value = slope.toFixed(5);
         document.getElementById("yInterceptInput").value = yIntercept.toFixed(5);
         document.getElementById("viewportWidthInput").value = viewport1.toFixed(0);
