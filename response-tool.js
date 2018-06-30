@@ -44,6 +44,15 @@
         document.getElementById("showSize").innerHTML = size.toFixed(2);
     }
 
+    var input = document.getElementById("viewportWidthInput");
+    input.addEventListener("keyup", function(event){
+        
+        if (event.keyCode === 13) {
+            document.getElementById("elementSizeBtn").click();
+        }
+    });
+
+
 //***********************************************************************************************************************************************************    
 // Responsive Styling for Equation Maker Section  
 
