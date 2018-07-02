@@ -321,14 +321,8 @@ function extractParts(stringAsEquation){
         }
     }
     //console.log("yIntercept is: " + Number(yIntercept));
-    equationParts.slope = slope;
-    equationParts.yIntercept = yIntercept;
+    equationParts.slope = slope*1;		// *1 converts slope to a number from a string - namely to remove the + sign if present
+    equationParts.yIntercept = yIntercept*1;	// *1 converts slope to a number from a string - namely to remove the + sign if present
     return equationParts;
     
 };
-
-//var parts = extractParts("((0.00494)*(vpWidth)-0.77778)");    
-
-//console.log((parts.slope) + " and " + (parts.yIntercept));
-
-
