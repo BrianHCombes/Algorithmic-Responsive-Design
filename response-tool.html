@@ -13,7 +13,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.6.0/clipboard.min.js"></script>
-    <!-- script files also listed at end of this file for proper operation -->
+    <script src="response-tool.js" defer></script>
+    <!-- script files were listed at end of this file until I discovered the "defer" attribute -->
 
 <style></style>    
     
@@ -77,12 +78,42 @@
         <div class="headerStyle2" style="color:blue; font-weight:bold; clear:left; text-align:center;">Element size calculator at given Viewport width</div>
         <br>
         <div id="inputDiv2">
+            
+            &nbsp;&nbsp;Enter full equation:&nbsp;&nbsp;&nbsp;
+            <input class="" id="fullEquationInput" type="text" value="" 
+                   style="  padding:5px 0px 5px 5px;
+                            color:red;
+                            background-color:yellow;
+                            font-family:'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+                            font-weight:bold;
+                            /* width:           AR_400px_200px */
+                            /* font-size:       AR_1.2em_.75em */
+                            ">    
+            <br><br>
+            
+            &nbsp;&nbsp;
+            <button id="calcFullEquation" onclick="parseAndCalc()" style="">Get Sizes</button>
+            <span id="showSizesAtViewPorts" style="margin-left:25px; font-size:24px; font-weight:bold;"></span>
+            <br><br>
+            
             &nbsp;&nbsp;Enter slope of equation
             <input class="elementSizeEq" id="slopeInput" type="number" value="">
             <br><br>
 
             &nbsp;&nbsp;Enter y intercept of equation
             <input class="elementSizeEq" id="yInterceptInput" type="number" value="">
+            <br><br>
+            
+            &nbsp;&nbsp;Size at 1170: 
+            <span id="size1" style="margin-left:25px; font-size:24px; font-weight:bold;"></span>
+            <br><br>
+            
+            &nbsp;&nbsp;Size at 360:&nbsp;&nbsp;
+            <span id="size2" style="margin-left:25px; font-size:24px; font-weight:bold;"></span>
+            <br><br>
+            
+            &nbsp;&nbsp;Size at 320:&nbsp;&nbsp;
+            <span id="size3" style="margin-left:25px; font-size:24px; font-weight:bold;"></span>
             <br><br>
 
             &nbsp;&nbsp;Enter Viewport width in pixels
@@ -232,6 +263,5 @@
             <a href="https://www.w3schools.com/jsref/met_win_matchmedia.asp" target="_blank">&#128279;API</a>
         </div>
     </div>
-<script src="response-tool.js"></script>
 </body>
 </html>
