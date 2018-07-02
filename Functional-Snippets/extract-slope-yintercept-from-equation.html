@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Extract: Slope Y Intercept</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div>Extracts slope and y intercept from response equation</div>
+    
+    
+    
+<script>
+    
+//var minusCnt = 0;    
+//var operatorCnt = 0;  
+  
+function extractParts(stringAsEquation){    
+    // alert();
+    var slope = "";
+    var yIntercept = "";
+    var operator1;
+    var operator1Index;
+    var operator2;
+    var operator2Index;
+    var operatorCnt = 0;  
+   
+    // var string = "((0.00494)*(vpWidth)-0.77778)";
+    var string = stringAsEquation;
+    var equationParts = {
+                            "slope":undefined,
+                            "yIntercept":undefined
+    };
+    
+    
+// Find Operator ***********************************************************************************************************************************************************    
+    for(i=0; i<string.length; i++){
+        
+        if(string.charAt(i) === "+" || string.charAt(i) === "-"){
+            
+            operatorCnt++;
+            if(operatorCnt === 1){
+                operator2Index = i;
+                operator2 = string.charAt(i);
+            };
+            if(operatorCnt ===2){
+                operator1Index = operator2Index;
+                operator1 = operator2;
+                operator2Index = i;
+                operator2 = string.charAt(i);
+            }
+            //if(string.charAt(i)=== "-"){minusCnt++;}
+        }
+    }
+    
+    //console.log("operator1Index is: " + operator1Index);
+    //console.log("operator1 is: " + operator1);
+    //console.log("operator2Index is: " + operator2Index);
+    //console.log("operator2 is: " + operator2);
+
+// Find Slope ***********************************************************************************************************************************************************    
+    if(operatorCnt === 2){
+        slope += operator1;
+    }
+    for(i=0; i<operator2Index; i++){
+        
+        var testchar = string.charAt(i);
+        if(testchar !== "."){
+            testchar = Number(testchar);
+        }
+        if(Number.isInteger(testchar) === true || testchar === "."){
+            slope += (testchar + "");
+        }
+    }
+    //console.log("slope is: " + Number(slope));
+    
+// Find Y Intercept ***********************************************************************************************************************************************************
+    yIntercept = operator2;
+    for(i=operator2Index+1; i<string.length; i++){
+        
+        var testForNum = string.charAt(i);
+        if(testForNum !== "."){
+            testForNum = Number(testForNum);
+        }
+        
+        if(Number.isInteger(testForNum) === true || testForNum === "."){
+            yIntercept += testForNum + "";
+        }
+    }
+    //console.log("yIntercept is: " + Number(yIntercept));
+    equationParts.slope = slope;
+    equationParts.yIntercept = yIntercept;
+    return equationParts;
+    
+};
+
+var parts = extractParts("((0.00494)*(vpWidth)-0.77778)");    
+
+//console.log("operatorCnt is: " + operatorCnt);
+console.log((parts.slope) + " and " + (parts.yIntercept));
+//console.log("minus count is: " + minusCnt);
+
+</script>    
+</body>
+</html>
