@@ -28,10 +28,10 @@
             document.getElementById("eqExpression").innerHTML = "((" + slope.toFixed(5) + ")*(" + unitTypeForEquation + ")+" + yIntercept.toFixed(5) + ")"; 
         else
             document.getElementById("eqExpression").innerHTML = "((" + slope.toFixed(5) + ")*(" + unitTypeForEquation + ")" + yIntercept.toFixed(5) + ")"; 
-        document.getElementById("slopeInput").value = slope.toFixed(5);
-        document.getElementById("yInterceptInput").value = yIntercept.toFixed(5);
-        document.getElementById("viewportWidthInput").value = viewport1.toFixed(0);
-    }
+            document.getElementById("slopeInput").value = slope.toFixed(5);
+            document.getElementById("yInterceptInput").value = yIntercept.toFixed(5);
+            document.getElementById("viewportWidthInput").value = viewport1.toFixed(0);
+        }
 
 //***********************************************************************************************************************************************************  
 // Calculate Element or Property size at given viewport width
@@ -43,6 +43,9 @@
         
         //("after parts: " + parts.slope + " and " + parts.yIntercept);
         console.log((parts.slope) + " and " + (parts.yIntercept));
+        
+        document.getElementById("slopeInput").value = parts.slope;
+        document.getElementById("yInterceptInput").value = parts.yIntercept;
         
         var sizeAt1170 = Number(parts.slope*1170) + Number(parts.yIntercept);
         document.getElementById("size1").innerHTML = sizeAt1170.toFixed(2);
