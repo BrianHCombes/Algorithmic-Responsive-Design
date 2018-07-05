@@ -1,6 +1,7 @@
 //***********************************************************************************************************************************************************    
 // variable declarations
     new Clipboard("#copyEqBtn");
+    new Clipboard("#copyCommentBtn");
     
     var orientReport = window.matchMedia("(orientation: portrait)");
     
@@ -56,9 +57,8 @@
         var sizeAt320 = Number(parts.slope*320) + Number(parts.yIntercept);
         document.getElementById("size3").innerHTML = sizeAt320.toFixed(2);
         
-        
-        
-        
+        document.getElementById("commentJS").innerHTML = "/* AR_" + sizeAt1170.toFixed(2) + "_" + sizeAt360.toFixed(2) + " */";
+        document.getElementById("commentJS").style.fontSize = ((0.00494)*(vpWidth)+10.22222) + "px";                                 /* AR_16.00_12.00 */
         
     }
     
