@@ -48,6 +48,9 @@
         document.getElementById("slopeInput").value = parts.slope;
         document.getElementById("yInterceptInput").value = parts.yIntercept;
         
+        var sizeAt1920 = Number(parts.slope*1920) + Number(parts.yIntercept);
+        document.getElementById("size1").innerHTML = sizeAt1920.toFixed(2);
+        
         var sizeAt1170 = Number(parts.slope*1170) + Number(parts.yIntercept);
         document.getElementById("size1").innerHTML = sizeAt1170.toFixed(2);
         
@@ -57,9 +60,17 @@
         var sizeAt320 = Number(parts.slope*320) + Number(parts.yIntercept);
         document.getElementById("size3").innerHTML = sizeAt320.toFixed(2);
         
-        document.getElementById("commentJS").innerHTML = "/* AR_" + sizeAt1170.toFixed(2) + "_" + sizeAt360.toFixed(2) + " */";
-        document.getElementById("commentJS").style.fontSize = ((0.00494)*(vpWidth)+10.22222) + "px";                                 /* AR_16.00_12.00 */
+        document.getElementById("commentJS1").innerHTML = "// AR_1170_" + sizeAt1170.toFixed(2) + "_360_" + sizeAt360.toFixed(2);
+        document.getElementById("commentJS1").style.fontSize = ((0.00494)*(vpWidth)+10.22222) + "px";                                 /* AR_16.00_12.00 */
         
+        document.getElementById("commentJS2").innerHTML = "// AR_1170_" + sizeAt1170.toFixed(2) + "_320_" + sizeAt320.toFixed(2);
+        document.getElementById("commentJS2").style.fontSize = ((0.00494)*(vpWidth)+10.22222) + "px"; 
+        
+        document.getElementById("commentJS3").innerHTML = "// AR_1920_" + sizeAt1920.toFixed(2) + "_360_" + sizeAt360.toFixed(2);
+        document.getElementById("commentJS3").style.fontSize = ((0.00494)*(vpWidth)+10.22222) + "px"; 
+        
+        document.getElementById("commentJS4").innerHTML = "// AR_1920_" + sizeAt1920.toFixed(2) + "_320_" + sizeAt320.toFixed(2);
+        document.getElementById("commentJS4").style.fontSize = ((0.00494)*(vpWidth)+10.22222) + "px"; 
     }
     
     function getSize(){
