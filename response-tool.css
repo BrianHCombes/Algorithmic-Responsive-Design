@@ -33,6 +33,12 @@ position:absolute;
 padding:5px 0px 5px 5px;
 }
 
+.equationPoints1ClearBtn
+{
+position:absolute; 
+padding:5px;  
+}
+
 #slopeInput, #yInterceptInput, #viewportWidthInput
 {
 position:absolute; 

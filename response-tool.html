@@ -19,7 +19,7 @@
 <style></style>    
     
 </head>
-<body>
+<body onload="setDefaultValues()">
 
 <!--************************************************************************************************************************************************-->
 <!-- Equation maker section -->
@@ -41,52 +41,58 @@
         <br>
         <div id="equationPointsEntry">
             &nbsp;&nbsp;Enter first viewport width:
-            <!--<input class="equationPoints1" id="equationPoint1" type="number" value="1170">-->
-            <select class="equationPoints1" id="equationPoint1" type="number">
-                <option value="1920">1920</option>
-                <option value="1170" selected>1170</option>
-                <option value="360">360</option>
-                <option value="320">320</option>
-            </select>
+           
+                <input list="equationPoint1List" id="equationPoint1" class="equationPoints1">
+                <datalist id="equationPoint1List">
+                    <option value="1920">
+                    <option value="1170">
+                    <option value="360">
+                    <option value="320">
+                </datalist>
+                <button onclick="equationPointInputClear(1)" class="equationPoints1ClearBtn">clear</button>
+                
             <br><br>
             &nbsp;&nbsp;Enter first property size:
-            <!--<input class="equationPoints1" id="equationPoint2" type="number" value="5">-->
-            <select class="equationPoints1" id="equationPoint2" type="number">
-                <option value="5.0" selected>5</option>
-                <option value="4.5">4.5</option>
-                <option value="4.0">4</option>
-                <option value="3.5">3.5</option>
-                <option value="3.0">3</option>
-                <option value="2.5">2.5</option>
-                <option value="2.0">2</option>
-                <option value="1.5">1.5</option>
-                <option value="1.0">1</option>
-            </select>
+            <input list="equationPoint2List" id="equationPoint2" class="equationPoints1">
+            <datalist id="equationPoint2List">
+                <option value="5.0">
+                <option value="4.5">
+                <option value="4.0">
+                <option value="3.5">
+                <option value="3.0">
+                <option value="2.5">
+                <option value="2.0">
+                <option value="1.5">
+                <option value="1.0">
+            </datalist>
+            <button onclick="equationPointInputClear(2)" class="equationPoints1ClearBtn">clear</button>
             <br><br>
             &nbsp;&nbsp;Enter second viewport width:
-            <!--<input class="equationPoints1" id="equationPoint3" type="number" value="360">-->
-            <select class="equationPoints1" id="equationPoint3" type="number">
-                <option value="1920">1920</option>
-                <option value="1170">1170</option>
-                <option value="360" selected>360</option>
-                <option value="320">320</option>
-            </select>
+            <input list="equationPoint3List" id="equationPoint3" class="equationPoints1">
+            <datalist id="equationPoint3List">
+                <option value="1920">
+                <option value="1170">
+                <option value="360">
+                <option value="320">
+            </datalist>
+            <button onclick="equationPointInputClear(3)" class="equationPoints1ClearBtn">clear</button>
             <br><br>
             &nbsp;&nbsp;Enter second property size:
-            <!--<input class="equationPoints1" id="equationPoint4" type="number" value="1">-->
-            <select class="equationPoints1" id="equationPoint4" type="number">
-                <option value="5" selected>1.5</option>
-                <option value="1.4">1.4</option>
-                <option value="1.3">1.3</option>
-                <option value="1.2">1.2</option>
-                <option value="1.1">1.1</option>
-                <option value="1.0" selected>1</option>
-                <option value="0.9">0.9</option>
-                <option value="0.8">0.8</option>
-                <option value="0.7">0.7</option>
-                <option value="0.6">0.6</option>
-                <option value="0.5">0.5</option>
-            </select>
+            <input list="equationPoint4List" id="equationPoint4" class="equationPoints1">
+            <datalist id="equationPoint4List">
+                <option value="5">
+                <option value="1.4">
+                <option value="1.3">
+                <option value="1.2">
+                <option value="1.1">
+                <option value="1.0">
+                <option value="0.9">
+                <option value="0.8">
+                <option value="0.7">
+                <option value="0.6">
+                <option value="0.5">
+            </datalist>
+            <button onclick="equationPointInputClear(4)" class="equationPoints1ClearBtn">clear</button>
         </div>    
         <br><br>
         
