@@ -35,32 +35,19 @@
         }
         
     function equationPointInputClear(eqPoint){
-        
         switch(eqPoint){
-            
-            case 1: document.getElementById("equationPoint1").value = "";
-                    break;
-                    
-            case 2: document.getElementById("equationPoint2").value = "";
-                    break;
-                    
-            case 3: document.getElementById("equationPoint3").value = "";
-                    break;
-                    
-            case 4: document.getElementById("equationPoint4").value = "";
-                    break;
+            case 1: document.getElementById("equationPoint1").value = ""; break;
+            case 2: document.getElementById("equationPoint2").value = ""; break;
+            case 3: document.getElementById("equationPoint3").value = ""; break;
+            case 4: document.getElementById("equationPoint4").value = ""; break;
         }
-        
-        // document.getElementById("equationPoint1").value = "";
     }     
     
     function setDefaultValues(){
-        
         document.getElementById("equationPoint1").value = "1170";
         document.getElementById("equationPoint2").value = "5";
         document.getElementById("equationPoint3").value = "360";
         document.getElementById("equationPoint4").value = "1";
-        
     }
 
 //***********************************************************************************************************************************************************  
@@ -154,22 +141,23 @@
             else if(vpWidth >= 480 && vpWidth < 960){
                 document.getElementsByClassName("equationPoints1")[i].style.left = (-0.04167)*(vpWidth)+60.00000 + "%";             // 20% at 960 - 40% at 480
                 document.getElementsByClassName("equationPoints1ClearBtn")[i].style.left = ((-0.05428)*(vpWidth)+81.05428) + "%";   // AR_1170_30.00_360_50.00
-                //document.getElementsByClassName("equationPoints1ClearBtn")[i].style.left = "29%"; 
             }
             else {
-                document.getElementsByClassName("equationPoints1")[i].style.left = (-0.16667)*(vpWidth) + 120.00000 + "%";          // 40% at 480 - 60% at 360
-                document.getElementsByClassName("equationPoints1ClearBtn")[i].style.left = ((-0.21008)*(vpWidth)+155.63025) + "%";  // 40% at 480 - 60% at 360
-                // document.getElementsByClassName("equationPoints1ClearBtn")[i].style.left = "80%"; 
+                document.getElementsByClassName("equationPoints1")[i].style.left = ((-0.10692)*(vpWidth)+91.21384) + "%";          // 40% at 480 - 60% at 360
+                // document.getElementsByClassName("equationPoints1")[i].style.left = "40%";          // 40% at 480 - 60% at 360
+                document.getElementsByClassName("equationPoints1ClearBtn")[i].style.left = ((-0.15723)*(vpWidth)+130.31447) + "%";  // AR_1170_-53.64_320_80.00
+                // document.getElementsByClassName("equationPoints1ClearBtn")[i].style.left = "55%"; 
             }
             document.getElementsByClassName("equationPoints1")[i].style.width = (0.03205)*(vpWidth) + 38.46154 + "px";              // 100px at 1920 - 50px at 360
             document.getElementsByClassName("equationPoints1ClearBtn")[i].style.width = (0.03205)*(vpWidth) + 38.46154 + "px";      // 100px at 1920 - 50px at 360
         }
     
         document.getElementById("createEquationBtn").style.fontSize = (0.00064)*(vpWidth) + 0.76923 + "em";                 // 2em at 1920 - 1 em at 360
-        document.getElementById("equationBox1").style.fontSize = (0.00064)*(vpWidth) + 0.76923 + "em";                      // 2em at 1920 - 1 em at 360 
+        document.getElementById("equationBox1").style.fontSize = ((0.00075)*(vpWidth)+0.56000) + "em";                      // AR_1920_2.00_320_0.80
+        //document.getElementById("equationBox1").style.fontSize = 2.0 + "em";                      
         if(vpWidth < 540){
             document.getElementById("lineBreak1").style.display = "inline";     // display none above 475 - display inline below 475 
-            document.getElementById("equationBox1").style.width = "75%";        // display none above 475 - display inline below 475 
+            document.getElementById("equationBox1").style.width = "70%";        
         }
     }   
     
