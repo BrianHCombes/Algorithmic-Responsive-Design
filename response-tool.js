@@ -48,7 +48,7 @@
         document.getElementById("equationPoint2").value = "5";
         document.getElementById("equationPoint3").value = "360";
         document.getElementById("equationPoint4").value = "1";
-    }
+        }
 
 //***********************************************************************************************************************************************************  
 // Calculate Element or Property size at given viewport width
