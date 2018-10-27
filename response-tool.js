@@ -33,6 +33,22 @@
             document.getElementById("yInterceptInput").value = yIntercept.toFixed(5);
             document.getElementById("viewportWidthInput").value = viewport1.toFixed(0);
         }
+        
+    function equationPointInputClear(eqPoint){
+        switch(eqPoint){
+            case 1: document.getElementById("equationPoint1").value = ""; break;
+            case 2: document.getElementById("equationPoint2").value = ""; break;
+            case 3: document.getElementById("equationPoint3").value = ""; break;
+            case 4: document.getElementById("equationPoint4").value = ""; break;
+        }
+    }     
+    
+    function setDefaultValues(){
+        document.getElementById("equationPoint1").value = "1170";
+        document.getElementById("equationPoint2").value = "5";
+        document.getElementById("equationPoint3").value = "360";
+        document.getElementById("equationPoint4").value = "1";
+        }
 
 //***********************************************************************************************************************************************************  
 // Calculate Element or Property size at given viewport width
@@ -111,30 +127,37 @@
         document.getElementsByClassName("unit")[2].style.fontSize = (0.00053)*(vpWidth)+0.63059 + "em";
         document.getElementById("title").style.fontSize = (0.00123)*(vpWidth)+0.55556 + "em";         // XXem at 1920 - XXem at 360
         document.getElementById("title").style.fontSize = (0.00109)*(vpWidth) + 0.90769 + "em";         // XXem at 1920 - XXem at 360
-        document.getElementsByClassName("headerStyle1")[0].style.fontSize = (0.00064)*(vpWidth) + 1.26923 + "em";         // 2.5em at 1920 - 1.5em at 360
-        document.getElementsByClassName("headerStyle2")[0].style.fontSize = (0.00042)*(vpWidth) + 0.70000 + "em";         // 1.5em at 1920 - 0.9em at360
-        document.getElementById("equationPointsEntry").style.fontSize = (0.00013)*(vpWidth) + 0.75385 + "em";             // 1.0em at 1920 - 0.8em at 360
-        document.getElementById("equationPoint2").style.left = (-0.02564)*(vpWidth) + 69.23077 + "%";                     // 20% at 1920 - 60% at 360
-        document.getElementById("equationPoint2").style.width = (0.03205)*(vpWidth) + 38.46154 + "px";                    // 100px at 1920 - 50px at 360     
+        document.getElementsByClassName("headerStyle1")[0].style.fontSize = (0.00064)*(vpWidth) + 1.26923 + "em";           // 2.5em at 1920 - 1.5em at 360
+        document.getElementsByClassName("headerStyle2")[0].style.fontSize = (0.00042)*(vpWidth) + 0.70000 + "em";           // 1.5em at 1920 - 0.9em at360
+        document.getElementById("equationPointsEntry").style.fontSize = (0.00013)*(vpWidth) + 0.75385 + "em";               // 1.0em at 1920 - 0.8em at 360
+        document.getElementById("equationPoint2").style.left = (-0.02564)*(vpWidth) + 69.23077 + "%";                       // 20% at 1920 - 60% at 360
+        document.getElementById("equationPoint2").style.width = (0.03205)*(vpWidth) + 38.46154 + "px";                      // 100px at 1920 - 50px at 360     
 
         for(i=0; i<document.getElementsByClassName("equationPoints1").length; i++ ){
             if(vpWidth >= 960){ 
-                document.getElementsByClassName("equationPoints1")[i].style.left = "20%";                               // 20% at 1920 - 20% at 960
+                document.getElementsByClassName("equationPoints1")[i].style.left = "20%";                                   // 20% at 1920 - 20% at 960
+                document.getElementsByClassName("equationPoints1ClearBtn")[i].style.left = "30%";                           // 30% at 1920 - 30% at 960
             } 
             else if(vpWidth >= 480 && vpWidth < 960){
-                document.getElementsByClassName("equationPoints1")[i].style.left = (-0.04167)*(vpWidth) + 60.00000 + "%"; // 20% at 960 - 40% at 480
+                document.getElementsByClassName("equationPoints1")[i].style.left = (-0.04167)*(vpWidth)+60.00000 + "%";             // 20% at 960 - 40% at 480
+                document.getElementsByClassName("equationPoints1ClearBtn")[i].style.left = ((-0.05428)*(vpWidth)+81.05428) + "%";   // AR_1170_30.00_360_50.00
             }
             else {
-                document.getElementsByClassName("equationPoints1")[i].style.left = (-0.16667)*(vpWidth) + 120.00000 + "%";// 40% at 480 - 60% at 360
+                document.getElementsByClassName("equationPoints1")[i].style.left = ((-0.10692)*(vpWidth)+91.21384) + "%";          // 40% at 480 - 60% at 360
+                // document.getElementsByClassName("equationPoints1")[i].style.left = "40%";          // 40% at 480 - 60% at 360
+                document.getElementsByClassName("equationPoints1ClearBtn")[i].style.left = ((-0.15723)*(vpWidth)+130.31447) + "%";  // AR_1170_-53.64_320_80.00
+                // document.getElementsByClassName("equationPoints1ClearBtn")[i].style.left = "55%"; 
             }
-            document.getElementsByClassName("equationPoints1")[i].style.width = (0.03205)*(vpWidth) + 38.46154 + "px";    // 100px at 1920 - 50px at 360
+            document.getElementsByClassName("equationPoints1")[i].style.width = (0.03205)*(vpWidth) + 38.46154 + "px";              // 100px at 1920 - 50px at 360
+            document.getElementsByClassName("equationPoints1ClearBtn")[i].style.width = (0.03205)*(vpWidth) + 38.46154 + "px";      // 100px at 1920 - 50px at 360
         }
     
-        document.getElementById("createEquationBtn").style.fontSize = (0.00064)*(vpWidth) + 0.76923 + "em";               // 2em at 1920 - 1 em at 360
-        document.getElementById("equationBox1").style.fontSize = (0.00064)*(vpWidth) + 0.76923 + "em";                    // 2em at 1920 - 1 em at 360 
+        document.getElementById("createEquationBtn").style.fontSize = (0.00064)*(vpWidth) + 0.76923 + "em";                 // 2em at 1920 - 1 em at 360
+        document.getElementById("equationBox1").style.fontSize = ((0.00075)*(vpWidth)+0.56000) + "em";                      // AR_1920_2.00_320_0.80
+        //document.getElementById("equationBox1").style.fontSize = 2.0 + "em";                      
         if(vpWidth < 540){
             document.getElementById("lineBreak1").style.display = "inline";     // display none above 475 - display inline below 475 
-            document.getElementById("equationBox1").style.width = "75%";        // display none above 475 - display inline below 475 
+            document.getElementById("equationBox1").style.width = "70%";        
         }
     }   
     
