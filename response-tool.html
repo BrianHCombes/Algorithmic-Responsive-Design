@@ -104,14 +104,30 @@
             <span>Element/Property size = </span><span id="lineBreak1" style="display:none;"><br></span>
             <span id="eqExpression"></span>
         </div>
-         
         
         <button id="copyEqBtn" 
                 data-clipboard-action="copy"
                 data-clipboard-target="#eqExpression"
                 style="float:left; margin-left:10px;"> 
                 <img src="https://clipboardjs.com/assets/images/clippy.svg" style="width:30px;" alt="Copy to clipboard">
-        </button><p style="clear:left;">&nbsp;</p>
+        </button><div style="clear:left;">&nbsp;</div>
+        
+        <div style="background-color:lightgray; display:inline-block; margin:5px 0px 0px 10px; padding:5px 5px 5px 5px; border:1px solid black; border-radius:5px;">
+            &nbsp;&nbsp;JS Comment of Inputs: <b><span id="viewWidth1"></span></b><b><span id="viewWidth2"></span></b>&nbsp;&nbsp;<br>
+            <span id="commentJS5" style="color:red; 
+                                        margin-left:10px; 
+                                        font-weight:bold;
+                                        padding:2px 10px;
+                                        border:1px solid black;
+                                        background-color:yellow;">AR comment</span>
+
+            <button id="copyCommentBtn" 
+                data-clipboard-action="copy"
+                data-clipboard-target="#commentJS5"
+                style="margin-left:10px; margin-top:5px;"> 
+                <img src="https://clipboardjs.com/assets/images/clippy.svg" style="height:20px;" alt="Copy to clipboard">
+            </button>
+        </div> 
         <hr>
         
 <!--************************************************************************************************************************************************-->
@@ -220,7 +236,27 @@
                     style="margin-left:10px; margin-top:5px;"> 
                     <img src="https://clipboardjs.com/assets/images/clippy.svg" style="height:20px;" alt="Copy to clipboard">
                 </button>
-            </div>  
+            </div> 
+            <br>
+            <!--
+            <div style="background-color:lightgray; display:inline-block; margin:5px 0px 0px 10px; padding:5px 5px 5px 5px; border:1px solid black; border-radius:5px;">
+                &nbsp;&nbsp;JS Comment <b><span id="viewWidth1"></span></b> to <b><span id="viewWidth2"></span></b>:&nbsp;&nbsp;<br>
+                <span id="commentJS5" style="color:red; 
+                                            margin-left:10px; 
+                                            /*font-size:20px; */  /* AR_16.00_12.00 */
+                                            font-weight:bold;
+                                            padding:2px 10px;
+                                            border:1px solid black;
+                                            background-color:yellow;">AR comment</span>
+
+                <button id="copyCommentBtn" 
+                    data-clipboard-action="copy"
+                    data-clipboard-target="#commentJS5"
+                    style="margin-left:10px; margin-top:5px;"> 
+                    <img src="https://clipboardjs.com/assets/images/clippy.svg" style="height:20px;" alt="Copy to clipboard">
+                </button>
+            </div> 
+-->
             <br><br>
             
             
