@@ -9,6 +9,11 @@
     var vpWidth = window.screen.availWidth;
     var unitTypeForEquation;
     
+    var viewport1;
+    var property1;
+    var viewport2;
+    var property2;
+    
 //***********************************************************************************************************************************************************    
 // Derive Slope Intercept Equation
 
@@ -18,10 +23,10 @@
                     unitTypeForEquation = document.getElementsByName("unit")[i].value;
                 }
             }
-        var viewport1 = Number(document.getElementById("equationPoint1").value);
-        var property1 = Number(document.getElementById("equationPoint2").value);
-        var viewport2 = Number(document.getElementById("equationPoint3").value);
-        var property2 = Number(document.getElementById("equationPoint4").value);
+        viewport1 = Number(document.getElementById("equationPoint1").value);
+        property1 = Number(document.getElementById("equationPoint2").value);
+        viewport2 = Number(document.getElementById("equationPoint3").value);
+        property2 = Number(document.getElementById("equationPoint4").value);
         var slope = (property1 - property2)/(viewport1 - viewport2);
         var yIntercept = property1 - slope*viewport1;
         
@@ -32,7 +37,15 @@
             document.getElementById("slopeInput").value = slope.toFixed(5);
             document.getElementById("yInterceptInput").value = yIntercept.toFixed(5);
             document.getElementById("viewportWidthInput").value = viewport1.toFixed(0);
+            
+        // AR Comment reflecting specific user inputs
+        document.getElementById("viewWidth1").innerHTML = viewport1 + " to ";
+        document.getElementById("viewWidth2").innerHTML = viewport2;
+        
+        document.getElementById("commentJS5").innerHTML = "// AR_" + viewport1 + "_" + property1.toFixed(2) + "_" + viewport2 + "_" + property2.toFixed(2);
+        document.getElementById("commentJS5").style.fontSize = ((0.00494)*(vpWidth)+10.22222) + "px";     
         }
+        
         
     function equationPointInputClear(eqPoint){
         switch(eqPoint){
