@@ -34,21 +34,22 @@
             document.getElementById("eqExpression").innerHTML = "((" + slope.toFixed(5) + ")*(" + unitTypeForEquation + ")+" + yIntercept.toFixed(5) + ")"; 
         else {
             document.getElementById("eqExpression").innerHTML = "((" + slope.toFixed(5) + ")*(" + unitTypeForEquation + ")" + yIntercept.toFixed(5) + ")"; 
-            document.getElementById("slopeInput").value = slope.toFixed(5);
-            document.getElementById("yInterceptInput").value = yIntercept.toFixed(5);
-            document.getElementById("viewportWidthInput").value = viewport1.toFixed(0);
-            
-            document.getElementById("viewWidth1").innerHTML = viewport1 + " to ";
-            document.getElementById("viewWidth2").innerHTML = viewport2;
-            document.getElementById("viewWidth3").innerHTML = viewport1 + " to ";
-            document.getElementById("viewWidth4").innerHTML = viewport2;
+        }    
+        document.getElementById("slopeInput").value = slope.toFixed(5);
+        document.getElementById("yInterceptInput").value = yIntercept.toFixed(5);
+        document.getElementById("viewportWidthInput").value = viewport1.toFixed(0);
 
-            document.getElementById("commentJS5").innerHTML = "// AR_" + viewport1 + "_" + property1.toFixed(2) + "_" + viewport2 + "_" + property2.toFixed(2);
-            document.getElementById("commentJS5").style.fontSize = ((0.00494)*(vpWidth)+10.22222) + "px";     
+        document.getElementById("viewWidth1").innerHTML = viewport1 + " to ";
+        document.getElementById("viewWidth2").innerHTML = viewport2;
+        document.getElementById("viewWidth3").innerHTML = viewport1 + " to ";
+        document.getElementById("viewWidth4").innerHTML = viewport2;
 
-            document.getElementById("commentJS6").innerHTML = "/* AR_" + viewport1 + "_" + property1.toFixed(2) + "_" + viewport2 + "_" + property2.toFixed(2) + " */";
-            document.getElementById("commentJS6").style.fontSize = ((0.00494)*(vpWidth)+10.22222) + "px";    
-        }
+        document.getElementById("commentJS5").innerHTML = "// AR_" + viewport1 + "_" + property1.toFixed(2) + "_" + viewport2 + "_" + property2.toFixed(2);
+        document.getElementById("commentJS5").style.fontSize = ((0.00494)*(vpWidth)+10.22222) + "px";     
+
+        document.getElementById("commentJS6").innerHTML = "/* AR_" + viewport1 + "_" + property1.toFixed(2) + "_" + viewport2 + "_" + property2.toFixed(2) + " */";
+        document.getElementById("commentJS6").style.fontSize = ((0.00494)*(vpWidth)+10.22222) + "px";    
+       
     }    
         
     function equationPointInputClear(eqPoint){
@@ -131,10 +132,11 @@
     });
 
 
-
 //***********************************************************************************************************************************************************    
-// AR Response section for Equation Maker Section 
-
+//***********************************************************************************************************************************************************    
+// AR Response section for Equation Maker Section  
+//***********************************************************************************************************************************************************    
+//***********************************************************************************************************************************************************     
     function styleEquationSection(){
         
         // AR Comment reflecting specific user inputs
